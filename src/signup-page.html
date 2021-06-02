@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    //= partials/head.html
+    <title>Playempires</title>
+</head>
+
+<body class="signup-page">
+
+    <!--____________Header_top____________-->
+
+    //= partials/header.html
+
+    <!--____________Signup____________-->
+    <section class="contact-header">
+        <div class="row">
+            <div class="columns large-12 medium-12 small-12 contact-header__title">
+                <h2>Sign up now!</h2>
+                <div class="contact-header__breadcrumbs">
+                    <a class="contact-header__link" href="/">Home</a>&nbsp;
+                    <span>/</span>&nbsp;
+                    <span>Signup</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="sign-up">
+        <div class="row align-center sign-up__main">
+            <div class="columns small-8">
+                <h2 class="sign-up__title">Movies, games, music and e-books</h2>
+                <p class="sign-up__subtitle">Don't have an account?</p>
+            </div>
+        </div>
+    
+        <!--____________Form____________-->
+
+    <form class="sign-up__registration-form">
+
+        <div class="row align-center sign-up__row">
+            <div class="columns small-12 sign-up__items">
+                <input id="username" type="email" name="username" placeholder="E-mail *">
+                <label id="username-error" class="error"></label>
+            </div>
+        </div>
+    
+        <div class="row align-center sign-up__row">
+            <div class="columns medium-6 small-12 sign-up__items">
+                <input data-shp="regform-password" id="password_signup" type="password" name="password"
+                    placeholder="Password *">
+                <label id="password_signup-error" class="error" for="password_signup"></label>
+            </div>
+            <div class="columns medium-6 small-12 sign-up__items">
+                <input data-shp="regform-confirm-password" id="password_confirm" type="email" name="password"
+                    placeholder="Password *">
+                <label id="password_confirm-error" class="error"></label>
+            </div>
+        </div>
+        <div class="row">
+                <div class="columns small-12 sign-up__submit-link">
+                    <a data-shp="section-login" class="submit-text" href="#">Already have an
+                        account?</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="columns medium-6 small-12 sign-up__row-check">
+                <input type="checkbox" class="checkbox" id="are_you_sure" name="are_you_sure" data-shp="regform-check">
+                <label id="are_you_sure-error" class="error" for="are_you_sure"></label>
+                <label for="are_you_sure" class="check-lbl">I have read and agree to the
+                    <a href="terms.html">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a>,
+                    and certify that I am 18 years of age.</label>
+            </div>
+            
+        </div>
+    
+    
+        <div class="row align-center sign-up__submit">
+            <div class="columns medium-12 small-12 sign-up__submit-button">
+                <a href="2-steps.html">Submit now</a>
+            </div>
+            <div class="columns medium-12 small-12 sign-up__form-text">
+                <p class="editableText">
+                    We value your privacy and will not sell or rent your private information to third
+                    parties,
+                    except as disclosed
+                    in our Privacy Policy. See our <a href="terms.html">Terms and Conditions</a> and <a href="#">Privacy
+                        Policy</a> for more
+                    details. </p>
+            </div>
+        </div>
+    
+    </form>
+    </section>
+
+    <!--____________Footer____________-->
+
+    //= partials/footer.html
+
+    //= partials/scripts.html
+</body>
+
+</html>

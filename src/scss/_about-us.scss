@@ -1,0 +1,138 @@
+.about-us {
+	padding: 50px 0;
+
+	&__block-image {
+		padding-bottom: 20px;
+		
+	}
+
+	&__block-text {
+		text-align: center;
+	}
+
+	&__title {
+		@extend %newtext;
+		font-size: 3em;
+		text-align: center;
+	}
+
+	&__subtitle {
+		font: 300 1.125em/1.5555em $font_text;
+		color: $color_dark_blue;
+		margin: 0 0 3.5em;
+	}
+}
+
+.about-us-tiles {
+	padding-bottom: 50px;
+
+	&__item {
+		text-align: center;
+	}
+
+	&__block {
+		display: flex;
+		flex-direction: column;
+
+		img{
+			width: 100%;
+		}
+
+		@media (max-width:639px){
+			width: 80%;
+			margin: 10px auto;
+		}
+
+		&--aqua {
+			background-color: $color_aquamarine;
+
+			div>div {
+				background-color: darken($color_aquamarine, 3);
+			}
+		}
+
+		&--yellow {
+			background-color: $color_yellow;
+			flex-direction: column-reverse;
+
+			@media (max-width:639px){
+				flex-direction: column;
+			}
+
+			div>div {
+				background-color: darken($color_yellow, 10);
+			}
+		}
+
+		&--green {
+			background-color: $color_green;
+
+			div>div {
+				background-color: darken($color_green, 3);
+			}
+		}
+
+	}
+
+	&__overlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+
+	&__picture {
+		// height: 330px;
+		position: relative;
+
+		&:hover {
+			div {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__title {
+		color: $color_dark_blue;
+		font: 700 1.5em/1.1667em $font_text;
+		margin-bottom: 15px;
+		&:hover {
+			color: $color_white;
+		}
+	}
+
+	&__link {
+		display: block;
+		transition: all 0.5s;
+		padding: 5px 10px;
+		border: 2px solid $color_white;
+		i {
+			color: $color_white;
+		}
+	}
+
+	&__description {
+		height: 330px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0 50px;
+		
+		
+		a{
+			font: 400 0.6875em/1.2em $font_monserrat;
+			text-transform: uppercase;
+			color: #041721ab;
+			&:hover {
+				color: $color_white;
+			}
+		}
+		
+	}
+}

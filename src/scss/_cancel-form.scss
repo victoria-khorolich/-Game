@@ -1,0 +1,55 @@
+.support {
+@include bg("../images/bg_contacts.jpg");
+background-position: center;
+	padding: 120px 0;
+
+	&__title {
+		text-align: center;
+		h2 {
+			@extend %newtext;
+			color: $color_white;
+			text-align: center;
+			font-size: 3em;
+		}
+	}
+}
+
+.cancel {
+	font-family: $font_text;
+	background-color: #f4f8fb;
+	padding: 50px 0;
+	p{
+		font: 400 0.9em/1.5em $font_monserrat;
+	}
+	&__row {
+		height: inherit;
+		input {
+			@include field();
+		}
+	}
+
+	&__items {
+		@include field-items();
+	}
+
+	&__button{
+		display: block;
+		margin: 50px auto;
+		@extend %btn-scroll;
+		width: 200px;
+		padding: 9px 20px;
+	}
+	&__bottom{
+		@extend %simple-text;
+		color: $color_black;
+		font-size: 13px;
+		a{
+			color: $color_grey;
+			&__hover{
+				color: $color_green;
+			}
+		}
+	}
+
+	
+}

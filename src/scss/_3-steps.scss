@@ -1,0 +1,157 @@
+.three-steps {
+	padding: 10px 0;
+	background-color: #f4f8fb;
+
+	&__text {
+		background-color: #f4f8fb;
+		padding: 40px;
+		h3 {
+			font: 700 1em/1.25em $font_text;
+			margin-bottom: 1.3125em;
+			color: $color_black;
+			text-transform: uppercase;
+		}
+		p {
+			font: 400 0.8em/1.5555em $font_monserrat;
+			color: #616466;
+		}
+		a {
+			color: rgb(0, 191, 197);
+			&:hover{
+				color: $color_green;
+			}
+		}
+	}
+
+	&__wrap-form {
+		padding: 30px;
+		border-radius: 5px;
+		p {
+			flex-basis: 100%;
+			font-weight: bold;
+			@extend %simple-text;
+			padding-left: 15px;
+		}
+	}
+
+	
+	&__title{
+			@extend %subtitle;
+			font-weight: 700;
+			color: $color_black;
+			text-transform: capitalize;
+		}
+		
+	
+
+	
+
+	&__row {
+		position: relative;
+		input {
+			@include field();
+		}
+	}
+
+	&__items{
+		@include field-items();
+		input {
+			@include field();
+		}
+		select{
+			@include field();
+			padding: 0 30px 0 15px;
+		}
+	}
+
+	&__expiry-date {
+		background-color: transparent!important;
+		padding-top:7px;
+	}
+
+	&__wrapper-master {
+		position: relative;
+		background-color: transparent!important;
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+		&::after,
+		&::before {
+			position: absolute;
+			background-color: #fff;
+			left: 50%;
+			display: none;
+			z-index: 1000;
+		}
+		&::after {
+			content: 'Lorem ipsum dolor is amet...';
+			width: 100px;
+			padding: 7.5px;
+			border: 1px solid $color_grey;
+			box-shadow: 0 2px 5px $color_grey;
+			font-size: 0.7em;
+			transform: translateX(-50%);
+		}
+		&::before {
+			content: '';
+			width: 15px;
+			height: 15px;
+			transform: rotate(45deg) translateX(-50%);
+			bottom: -13px;
+			border-left: 1px solid $color_grey;
+			border-top: 1px solid $color_grey;
+		}
+	
+		&:hover::after,
+		&:hover::before {
+			display: block;
+		}
+	}
+
+	&__cvv2-link{
+		background-color: transparent!important;
+		padding-top: 7px;
+		z-index: 10;
+		a{
+			color: $color_black;
+			&:hover{
+				color: $color_green;
+			}
+		}
+	}
+
+	&__validate {
+		position: relative;
+		.checkbox {
+			position: absolute;
+			top: 30px;
+		}
+		.check-lbl {
+			margin-left: 20px;
+			a {
+				color: $color_aqua;
+				&:hover{
+					color: $color_green;
+				}
+			}
+		}
+	}
+	
+	
+	&__button {
+		margin: 20px auto;
+		padding: 0px 30px;
+		display: block;
+		@extend %btn-link;
+      	background-color: $color_green;
+		  color: $color_white;
+		  &:hover {
+			border: 10px solid $color_green;
+			background-color: transparent;
+			color: $color_green;
+		  }
+	}
+}
+
+

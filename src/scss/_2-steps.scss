@@ -1,0 +1,127 @@
+.subscription {
+	background: rgb(255, 255, 255);
+	padding: 80px 10px;
+	font-family: $font_text;
+	
+
+	&__title-blue {
+		color: $color_dark_blue;
+		margin-bottom: 20px;
+		@extend %newtext;
+		font-size: 3.75em;
+	}
+
+	&__content {
+		h2 {
+			font: 400 1.125/1.1818em $font_text;
+		}
+		p {
+			font: 400 0.9em/1.5em $font_monserrat;
+			a {
+				color: $color_green;
+				font-weight: 700;
+			}
+		}
+	}
+
+	&__bg {
+		padding-bottom: 20px; 
+		text-align: center;
+		color: $color_white;
+		a {
+			@extend %btn-link;
+			margin-top: 30px;
+			display: inline-block;
+			padding: 0px 30px;
+			border-color: $color_white;
+			color: $color_white;
+			margin-bottom: 40px;
+			&:hover{
+				border-color: $color_white;
+			}
+			@media (max-width: 969px){
+				padding: 0px 20px;
+				font-size: 11px;
+				line-height: 30px;
+				border-width: 8px;
+				&:hover{
+					border-width: 8px;
+				}
+			}
+		}
+	}
+	
+	&__title {
+		font: 700 1.125em/1.2em $font_monserrat;
+		text-transform: uppercase;
+		letter-spacing: 0.0667em;
+		text-align: center;
+		padding: 15px 10px;
+		@media (max-width:767px){
+			font-size: 0.85em;
+		}
+		&--aqua{
+			background-color: darken($color_aquamarine, 3);
+		}
+		&--green{
+			background-color: darken($color_green, 3);
+		}
+		&--yellow{
+			background-color: darken($color_yellow, 10);
+		}
+	}
+
+	&__price {
+		font: 900 3.75em/1.125em $font_text;
+		padding: 30px 0 10px 0;
+		&--aqua{
+			background-color: $color_aquamarine;
+		}
+		&--green{
+			background-color: $color_green;
+		}
+		&--yellow{
+			background-color: $color_yellow;
+		}
+		@media (max-width:767px){
+			font-size: 40px;
+		}
+	}
+	&__price-currency{
+		font-weight: 400;
+	}
+	&__price-period{
+		font-size: 18px;
+	}
+	&__block-list{
+		&--aqua{
+			background-color: $color_aquamarine;
+		}
+		&--green{
+			background-color: $color_green;
+		}
+		&--yellow{
+			background-color: $color_yellow;
+		}
+	}
+	&__block-list {
+			list-style-type: none;
+			font: 900 0.9375em/1.3333em $font_text;
+			min-height: 4em;
+			padding: 0.1333em 2em 0;
+			min-width: 4em;
+			@media (max-width:767px){
+				font-size: 0.7em;
+			}
+		&--aqua{
+			background-color: $color_aquamarine;
+		}
+		&--green{
+			background-color: $color_green;
+		}
+		&--yellow{
+			background-color: $color_yellow;
+		}
+	}
+
+}

@@ -1,0 +1,33 @@
+.terms {
+	padding: 50px 0 70px;
+	font-family: $font_text;
+	h2 {
+		font: 700 1em/1.25em $font_text;
+		margin-bottom: 1.3125em;
+		color: $color_black;
+		text-transform: uppercase;
+	}
+	h3 {
+		font: 400 0.75em/1.5em $font_monserrat;
+		margin-bottom: 2.1667em;
+		text-transform: uppercase;
+	}
+	h4 {
+		font: 500 0.9em/1.5555em $font_monserrat;
+	}
+	
+	p {
+		font: 400 0.9em/1.5555em $font_monserrat;
+		color: #616466;
+	}
+	
+	li {
+		text-align: left;
+		font-size: 13px;
+		color: $color_black;
+	}
+	
+	&__contact-us {
+		text-align: center;
+	}
+}

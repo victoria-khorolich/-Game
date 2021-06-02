@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    //= partials/head.html
+    <title>Playempires</title>
+</head>
+
+<body class="login-page">
+
+    <!--____________Header_top____________-->
+
+    //= partials/header.html
+
+    <!--________________________Signin______________________-->
+
+<section class="signin-form">
+    <div class="row align-middle align-center">
+        <div class="columns large-5 medium-8 small-12">
+            <form method="post" action="" name="frmCancel" id="cancel-form" class="signin-form__contact-form">
+                <h3 class="">Sign In</h3>
+
+                <div class="row signin-form__row">
+                    <div class="columns small-12 signin-form__items">
+                        <input id="username" type="email" name="username" placeholder="E-mail *">
+                        <label id="username-error" class="error"></label>
+                    </div>
+                </div>
+
+                <div class="row signin-form__row">
+                    <div class="columns small-12 signin-form__items">
+                        <input data-shp="regform-password" id="password_signup" type="password" name="password"
+                            placeholder="Password *">
+                        <label id="password_signup-error" class="error" for="password_signup"></label>
+                    </div>
+                </div>
+
+                <a href="#" id="open-card">Forgot your email or password?</a>
+
+                <div class="signin-form__btns-block">
+                    <button type="submit" class="button">Sing In</button>
+                </div>
+
+                <div class="check-box">
+                    <label>
+                        <input class="checkbox" type="checkbox" name="checkbox" checked="">
+                        <span class="checkbox-custom"></span>
+                        <span class="check-txt">Remember me</span>
+                    </label>
+                    <hr>
+                    <div class="signin-form__bottom">New to Playempires? <a href="#" class=""> Sign Up now.</a></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+   
+    <!--____________Footer____________-->
+
+    //= partials/footer.html
+
+    //= partials/scripts.html
+</body>
+
+</html>

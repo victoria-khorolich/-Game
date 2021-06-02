@@ -1,0 +1,121 @@
+.sign-up {
+	font-family: $font_text;
+	padding: 60px 10px 110px 10px;
+	background-color: #f4f8fb;
+
+	&__title {
+		text-align: center;
+		@extend %newtext;
+		font-size: 3em;
+		color: $color_dark_blue;
+		padding-bottom: 20px;
+	}
+	&__subtitle {
+		text-align: center;
+		@extend %newtext;
+		font-size: 1.5em;
+		color: $color_dark_grey;
+		margin-bottom: 50px;
+
+	}
+
+&__content {
+	text-align: center;
+		p {
+			color: $color_black;
+			text-transform: capitalize;
+			color: $color_white;
+			font-weight: 600;
+			font-size: 18px;
+			margin: 0;
+		}
+		i {
+			padding-left: 20px;
+		}
+		&--center {
+			border-left: 1px solid $color_white;
+			border-right: 1px solid $color_white;
+			@media (max-width: 640px) {
+				border: none;
+			}
+		}
+	}
+
+	
+	&__registration-form {
+		padding: 50px 0px;
+	}
+
+	&__row {
+		padding: 20px 0;
+
+		input {
+			@include field();
+		}
+	}
+
+	&__items {
+		@include field-items();
+	}
+
+	&__row-check {
+		position: relative;
+		input {
+			position: absolute;
+			top: 28px;
+			left: 10px;
+		}
+		.check-lbl {
+			font-size: 12px;
+			margin-left: 31px;
+			text-align: left;
+			@media (max-width: 1024px) {
+				margin-left: 30px;
+			}
+			a {
+				color: $color_aqua;
+				&:hover {
+					color: $color_green;
+				}
+			}
+		}
+	}
+
+	
+	&__submit-link {
+		text-align: center;
+		font-size: 15px;
+
+		@media (max-width: 640px) {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		a {
+			color: $color_aqua;
+
+			&:hover {
+				color: $color_green;
+			}
+		}
+	}
+
+	&__submit-button {
+		text-align: center;
+		margin: 50px 0 30px ;
+		a {
+			@extend %btn-link;
+		  }
+		
+	}
+	&__form-text {
+		p {
+			font-size: 12px;
+			a {
+				color: $color_aqua;
+				&:hover {
+					color: $color_green;
+				}
+			}
+		}
+	}
+}

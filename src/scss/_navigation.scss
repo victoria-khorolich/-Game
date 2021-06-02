@@ -1,0 +1,154 @@
+.top-header{
+	color: $color_green;
+	text-transform: uppercase;
+    font: 400 0.625em/1.2em $font_monserrat;
+	letter-spacing: 0.08em;
+	padding: 13px 0;
+	border-bottom: 1px dotted rgba(12, 230, 128, 0.233);
+	background-color: $color_dark_blue;
+	
+	a{
+		color: $color_green;
+		
+		&:hover{
+			color: $color_white;
+		}
+	}
+	@media(max-width: 639px){
+		display: none;
+	}
+}
+
+.navigation {
+	font-family: $font_text;
+	background-color: $color_dark_blue;
+	.stickyshadow {
+		background-color: $color_dark_blue;
+	}
+	.block-logo{
+		display: flex;
+		@media (max-width:1024px){
+			justify-content: center;
+		}
+		@media (max-width:639px){
+			justify-content: flex-start;
+		}
+
+	}
+	.logo {
+		display: flex;
+		align-items:center;
+		color: $color_white;
+
+		img {
+			width:50px;
+			margin: 15px 10px;
+		}
+	}
+
+	.menu {
+		padding: 10px 0;
+		@media (max-width: 1024px) {
+			justify-content: center;
+		}
+		li {
+			padding: 0 30px;
+			a {
+				padding: 0;
+				color: $color_white;
+				letter-spacing: 0.0909em;
+				font-family: $font_monserrat;
+				font-size: 0.75em;
+    			line-height: 1.4167em;
+				font-weight: 400;
+				&:hover {
+					border-bottom: 1px solid rgb(255, 255, 255);
+				}
+			}
+		}
+//--________________Active_button_____________--//
+		.is-active a{
+			border-bottom: 1px solid $color_white;
+			&:hover {
+				border-bottom: 1px solid $color_white;
+			}
+		}
+		.is-active a,
+		.is-active {
+			color: $color_white;
+			background-color: transparent;
+			
+			&:hover {
+				color: $color_white;
+			}
+//--________________Active_Mobile_button_____________--//
+			@media (max-width: 639px) {
+				color: $color_white;
+				font: 700 12px/16px $font_monserrat;
+				background-color: #0d9ba0;
+				border: none;
+				&:hover {
+					color: $color_white;
+					border: none;
+				}
+			}
+		}
+	}
+	//--________________Mobile button_____________--//
+
+	.title-bar {
+		background-color: rgba(255, 255, 255, 0);
+
+		.menu-icon {
+			padding-bottom: 20px;
+			width: 22px;
+			outline: none;
+		}
+		.menu-icon::after {
+			height: 3px;
+			box-shadow: 0 6px 0 $color_white, 0 12px 0 $color_white;
+			background-color: $color_white;
+			border-radius: 30px;
+		}
+	}
+
+	//--______________________Mobile_Menu____________________--//
+
+	@media (max-width: 639px) {
+		.columns {
+			padding-right: 0;
+			padding-left: 0;
+			.menu {
+				background-color: $color_bluemarine;
+				padding: 0;
+				li {
+					padding: 0;
+					border-bottom: 1px solid #089ea38a;
+					a {
+						font: 400 12px/16px $font_monserrat;
+						color: $color_white;
+						text-align: left;
+						padding: 15px 30px 15px;
+						text-decoration: none;
+						&:hover{
+							border: none;
+							background-color: #09abb1;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.mobile-btn {
+	display: block;
+	@media all and (min-width: 640px) {
+		display: none;
+	}
+}
+
+.sticky {
+	align-items: center;
+	z-index: 105;
+}

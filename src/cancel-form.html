@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    //= partials/head.html
+    <title>Playempires</title>
+</head>
+
+<body>
+
+    <!--____________Header_top____________-->
+
+    //= partials/header.html
+
+<!--____________Cancel_form____________-->
+
+    <section class="support">
+        <div class="row">
+            <div class="columns large-12 medium-12 small-12 support__title">
+                <h2>So This Is Goodbye?</h2>
+            </div>
+        </div>
+    </section>
+    <section class="cancel">
+        <div class="row align-center align-middle">
+            <div class="columns small-12 medium-10 large-8 cancel__text">
+                <p>We're sad to see you go! If you're
+                    positive about leaving, please fill out the form below. You will receive an email confirmation
+                    once the cancellation is complete. Make sure to check your spam and junk folders!</p>
+    
+                <form method="post" action="" name="frmCancel" id="cancel-form" class="cancel__form">
+                    <div class="row cancel__row">
+                        <div class="columns small-12 cancel__items">
+                            <input id="username" type="email" name="username" placeholder="Enter your E-mail">
+                            <label id="username-error" class="error"></label>
+                        </div>
+                    </div>
+    
+                    <div class="row cancel__row">
+                        <div class="columns small-12 cancel__items">
+                            <input data-shp="regform-password" id="password_signup" type="password" name="password"
+                                placeholder="Write password">
+                            <label id="password_signup-error" class="error" for="password_signup"></label>
+                        </div>
+                    </div>
+                    <div class="cancel__bottom">Don't have your password? <a href="#" id="open-card">Click here</a></div>
+                        <button type="submit" class="cancel__button">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!--____________Footer____________-->
+
+    //= partials/footer.html
+
+    //= partials/scripts.html
+</body>
+
+</html>

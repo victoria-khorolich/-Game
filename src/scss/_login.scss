@@ -1,0 +1,48 @@
+.signin-form {
+  font-family: $font_text;
+  @include bg("../images/bg_header_home.jpg");
+  // background-color: $color_dark_blue;
+  height: 100%;
+  padding-top: 150px;
+  form {
+    padding: 30px;
+    background-color: #f4f8fb;
+    h3 {
+	  @extend %newtext;
+	  font-size: 2.9em;
+    }
+
+    a {
+      color: $color_aqua;
+      font-size: 14px;
+      font-weight: 500;
+      &:hover {
+        color: $color_green;
+      }
+    }
+  }
+
+  &__row {
+    height: inherit;
+    input {
+      @include field();
+    }
+  }
+
+  &__items {
+    @include field-items();
+  }
+
+  &__btns-block {
+    text-align: center;
+    padding-top: 10px;
+    button {
+      @extend %btn-link;
+      padding: 0 80px;
+      background-color: transparent;
+    }
+  }
+  &__bottom {
+    font-size: 14px;
+  }
+}

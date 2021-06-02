@@ -1,0 +1,40 @@
+.home-header {
+  @include bg("../images/bg_header_home.jpg");
+  // background-color: $color_dark_blue;
+
+  &__block {
+    padding: 200px 10px;
+    text-align: center;
+    @media (max-width: 1500px) {
+      margin: 0 auto;
+    }
+    @media (max-width: 640px) {
+      padding: 50px 10px;
+    }
+  }
+  &__subtitle {
+    @extend %subtitle;
+  }
+
+  &__title {
+    @extend %title;
+    font-size: 20px;
+    line-height: 56px;
+  }
+
+  &__text {
+    @extend %text;
+    color: $color_yellow;
+  }
+
+  &__slogan {
+    @extend %slogan;
+  }
+
+  &__btn-link {
+    margin: 30px 0;
+    a {
+      @extend %btn-link;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.footer {
+  background-color: $color_dark_blue;
+  padding: 44px 0 22px;
+  color: $color_white;
+  font: 200 0.9em/1.5em $font_monserrat;
+  position: relative;
+  @media(max-width: 639px){
+		font-size: 0.7em;
+	}
+
+  .icons-footer {
+    text-align: center;
+    img{
+      margin-bottom: 18px;
+    }
+    img:first-child {
+      height: 25px;
+    }
+  }
+
+  p {
+    text-align: center;
+    font-weight: 300;
+    
+    a {
+      color: $color_aquamarine;
+      transition: all 0.3s ease 0s;
+      &:hover {
+        color: $color_green;
+        transition: all 0.3s ease 0s;
+      }
+    }
+  }
+
+  .fa-angle-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    right: 2em;
+    bottom: 2em;
+    height: 49px;
+    width: 49px;
+    font-size: 12px;
+    color: $color_white;
+    background-color: $color_aquamarine;
+    transition: all 0.2s linear;
+    &:hover {
+      background-color: $color_green;
+    }
+  }
+}
